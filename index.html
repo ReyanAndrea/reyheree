@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="id">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description"
+            content="Blog pribadi yang berisi cerita, pengalaman, dan inspirasi tentang berbagai topik menarik.">
+        <title>Website Pribadi</title>
+        <link rel="icon" type="images/jpeg"
+            href="favicon.ico/WhatsApp_Image_2025-02-23_at_16.32.06_6f1011fb-removebg-preview.png">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap"
+            rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+
+
+        <style>
+            body {
+                background: linear-gradient(135deg, #1a1a2e, #16213e);
+                color: #ffffff;
+                font-family: 'Poppins', sans-serif;
+                scroll-behavior: smooth;
+            }
+
+            h1 {
+                font-family: 'Playfair Display', serif;
+                font-weight: 700;
+            }
+
+
+            .navbar {
+                transition: background 0.3s ease-in-out;
+            }
+
+            .navbar-nav .nav-link {
+                transition: color 0.3s ease-in-out;
+                /* Animasi smooth */
+            }
+
+            .navbar-nav .nav-link:hover {
+                color: #00d4ff !important;
+                /* Warna saat dihover */
+            }
+
+            .scrolled {
+                background: rgba(0, 0, 0, 0.8) !important;
+            }
+
+            .hero {
+                background: url('images/download\ \(1\).jpeg') no-repeat center center/cover;
+                height: 100vh;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+            }
+
+            .btn-primary {
+                background-color: #00d4ff;
+                border: none;
+                animation: pulse 1.5s infinite;
+            }
+
+            .btn-primary:hover {
+                transform: scale(1.1);
+                background-color: #0088cc;
+
+            }
+
+            @keyframes pulse {
+                0% {
+                    transform: scale(1);
+                }
+
+                50% {
+                    transform: scale(1.05);
+                }
+
+                100% {
+                    transform: scale(1);
+                }
+            }
+
+            #backToTop {
+
+                position: fixed;
+                bottom: 20px;
+                right: 20px;
+                display: none;
+                background: #00d4ff;
+                color: #fff;
+                border: none;
+                padding: 10px 15px;
+                border-radius: 50%;
+                cursor: pointer;
+            }
+
+            footer {
+                background: #0d0d0d;
+                padding: 20px;
+                text-align: center;
+                font-size: 0.9rem;
+            }
+
+            .social-icons {
+                left: 50%;
+                transform: translateX(-50%);
+            }
+
+            .social-icons a {
+                font-family: 'Playfair Display', serif;
+                font-size: 1rem;
+                /* Ukuran ikon */
+                transition: transform 0.3s ease-in-out;
+            }
+
+            .social-icons a:hover {
+                transform: scale(1.2);
+                /* Efek membesar saat hover */
+                color: #00d4ff !important;
+            }
+        </style>
+    </head>
+
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="#">yoo, rey's blog heree!</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#help">Help</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <header id="home" class="hero" data-aos="fade-up">
+            <div>
+                <h1 class="display-3">yoo bro, what for u are coming?</h1>
+                <p class="lead">nothing here, go back and sleep better</p>
+                <a href="#about" class="btn btn-primary mt-3" id="playMusic">i have massage for u, tap here!</a>
+                <audio id="background-music" src="music/happier then ever.mp3"></audio/mp3>
+
+            </div>
+            <div class="social-icons position-absolute bottom-0 mb-3 d-flex gap-3">
+                <p class="social-text"> mine : </p>
+                <a href="https://instagram.com/reyan.andrea/" class="text-white" target="_blank"><i
+                        class="bi bi-instagram"></i> instagram</a>
+            </div>
+        </header>
+
+        <section id="about" class="about-section">
+            <div class="container text-center">
+                <h2 data-aos="fade-up">about me, but its for fun</h2>
+                <div class="about-content">
+                    <!-- Foto pertama (Kiri Atas) dengan teks di kanan -->
+                    <div class="profile-container left" data-aos="fade-right">
+                        <div class="profile-picture">
+                            <img src="images/download__2_-removebg-preview.png" alt="Foto Kiri" id="profile-img-left">
+                        </div>
+                        <p class="profile-text">Melawan dunia tanpa tutor. Setiap hari terasa sama, tanpa makna, tanpa
+                            tujuan. Mencoba tersenyum di depan orang lain, tapi di dalam hati, aku kosong. Tidak ada
+                            yang benar-benar mengerti, dan lelah menjelaskan. Rasanya lebih mudah diam, membiarkan
+                            semuanya berlalu begitu saja, meskipun perlahan tenggelam dalam perasaan sendiri.</p>
+                    </div>
+
+                    <!-- Foto kedua (Tengah Bawah) dengan teks di kiri dan kanan -->
+                    <div class="profile-container center" data-aos="fade-up">
+                        <p class="profile-text">Sering bertanya-tanya, apa gunanya ada di sini? berusaha
+                            sekuat tenaga untuk tetap bertahan, tapi rasanya semakin sulit. Melihat orang lain
+                            menjalani hidup mereka dengan bahagia, sementara kita hanya bisa berpura-pura baik-baik saja.
+                            Ingin meminta bantuan, tapi setiap kali mencoba, suaraku tertelan oleh rasa takut
+                            dan malu. Takut menjadi beban, jadi memilih menahan semuanya sendirian.</p>
+                        <div class="profile-picture">
+                            <img src="images/download__3_-removebg-preview.png" alt="Foto Tengah"
+                                id="profile-img-center">
+                        </div>
+                        <p class="profile-text">Malam-malam terasa paling berat. Saat semua orang terlelap, pikiranku
+                            mulai berbicara lebih keras. Mengingat semua kesalahan, semua kegagalan, semua hal yang
+                            membuatku merasa tidak cukup baik. Berusaha melawan pikiran itu, tapi semakin 
+                            melawan, semakin merasa kalah. Aku ingin tidur dan tidak bangun lagi, hanya untuk bisa
+                            merasakan sedikit kedamaian dari semua ini.</p>
+                    </div>
+
+                    <!-- Foto ketiga (Kanan Atas) dengan teks di kanan -->
+                    <div class="profile-container right" data-aos="fade-left">
+                        <div class="profile-picture">
+                            <img src="images/download__4_-removebg-preview.png" alt="Foto Kanan" id="profile-img-right">
+                        </div>
+                        <p class="profile-text">Aku ingin percaya bahwa semuanya akan membaik, tapi tidak tahu
+                            kapan. Ingin ada seseorang yang benar-benar melihatku, memahami tanpa aku harus
+                            menjelaskan panjang lebar. Aku hanya ingin berhenti merasa sendirian dalam lautan perasaan
+                            yang menyesakkan ini. Aku tidak butuh solusi instan, aku hanya ingin seseorang berkata, "Aku
+                            di sini untukmu," dan benar-benar ada, anjay..</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <style>
+            .about-section {
+                padding: 100px;
+                background: #16213e;
+                color: white;
+                text-align: center;
+            }
+
+            .about-content {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 40px;
+            }
+
+            .profile-container {
+                display: flex;
+                align-items: center;
+                gap: 20px;
+                width: 80%;
+            }
+
+            .profile-container.center {
+                justify-content: space-between;
+            }
+
+            .profile-picture {
+                width: 250px;
+                height: 250px;
+            }
+
+            .profile-picture img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                border-radius: 10%;
+                filter: drop-shadow(0 0 10px rgba(0, 212, 255, 0.8));
+                transition: transform 0.3s ease-in-out;
+            }
+
+            .profile-picture img:hover {
+                transform: scale(1.05);
+            }
+
+            .profile-text {
+                flex: 1;
+                text-align: left;
+            }
+
+            .profile-container.right .profile-text,
+            .profile-container.left .profile-text {
+                text-align: left;
+            }
+
+            @media (max-width: 768px) {
+                .profile-container {
+                    flex-direction: column;
+                    text-align: center;
+                    width: 100%;
+                }
+
+                .profile-text {
+                    text-align: center;
+                }
+            }
+            
+        </style>
+
+
+        <script>
+            window.onload = function () {
+                gsap.from(".profile-picture", { scale: 0, duration: 1.5, ease: "bounce.out" });
+
+                function animateCanvas(canvasId) {
+                    const canvas = document.getElementById(canvasId);
+                    const ctx = canvas.getContext("2d");
+                    canvas.width = canvas.offsetWidth;
+                    canvas.height = canvas.offsetHeight;
+
+                    function drawLines() {
+                        ctx.clearRect(0, 0, canvas.width, canvas.height);
+                        ctx.strokeStyle = "#00d4ff";
+                        ctx.lineWidth = 2;
+                        ctx.beginPath();
+                        for (let i = 0; i < 10; i++) {
+                            let angle = (performance.now() / 500 + i * 36) % 360;
+                            let x = 100 + 90 * Math.cos(angle * Math.PI / 180);
+                            let y = 100 + 90 * Math.sin(angle * Math.PI / 180);
+                            ctx.moveTo(100, 100);
+                            ctx.lineTo(x, y);
+                        }
+                        ctx.stroke();
+                        requestAnimationFrame(drawLines);
+                    }
+                    drawLines();
+                }
+
+                animateCanvas("animated-lines-left");
+                animateCanvas("animated-lines-center");
+                animateCanvas("animated-lines-right");
+            };
+        </script>
+
+
+        <section id="contact" class="container my-5" data-aos="fade-up">
+            <h2 class="text-center">something to talk ?</h2>
+            <form>
+                <div class="mb-3">
+                    <label class="form-label">Nama</label>
+                    <input type="text" class="form-control" placeholder="ur name here..">
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Email</label>
+                    <input type="email" class="form-control" placeholder="send email sini biar gue bales">
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">ur massage</label>
+                    <textarea class="form-control" rows="4" placeholder="put heree"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Kirim</button>
+            </form>
+        </section>
+
+        <section id="help" class="container my-5" data-aos="fade-up">
+            <h2 class="text-center">Thankyou</h2>
+            <p class="text-center">sudah membaca kegabutan ini, tapi minimal dengerin musiknya sampai habis la</p>
+        </section>
+
+        <footer>
+            <p>&copy; 2025 Blog Pribadi | Dibuat dengan penuh kegabutan 😹✨💫🎉💥🙌🏻</p>
+        </footer>
+
+        <button id="backToTop" onclick="scrollToTop()">&#8679;</button>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+        <script>
+             document.getElementById("playMusic").onclick = function () {
+        var music = document.getElementById("background-music");
+        if (music.paused) {
+            music.play();
+        } else {
+            music.pause();
+        }
+    };
+            document.querySelector("form").addEventListener("submit", function (e) {
+                e.preventDefault();
+                alert("Pesan Anda telah dikirim!");
+            });
+
+            AOS.init();
+
+            window.addEventListener('scroll', function () {
+                document.querySelector('.navbar').classList.toggle('scrolled', window.scrollY > 50);
+                document.getElementById('backToTop').style.display = window.scrollY > 200 ? 'block' : 'none';
+            });
+
+            function scrollToTop() {
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            }
+        </script>
+    </body>
+
+</html>
